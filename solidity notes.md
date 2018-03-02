@@ -1,0 +1,4 @@
+- Function modifiers
+	- 	`view` and `pure`
+	-	`view` indicates function doesn't modify storage state. `pure` indicates function doesn't even access it.
+	-	**compiler does not currently enforce**
