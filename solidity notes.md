@@ -1,4 +1,7 @@
 - Function modifiers
 	- 	`view` and `pure`
-	-	`view` indicates function doesn't modify storage state. `pure` indicates function doesn't even access it.
-	-	**compiler does not currently enforce**
+		-	`view` indicates function doesn't modify storage state. `pure` indicates function doesn't even access it.
+		-	**compiler does not currently enforce**	
+- Multiple return values
+	-	Function signature: `function multipleReturns() returns(uint a, uint b, uint c)`
+	-	Accessing: `(x, y, z) = multipleReturns()` or `( , , z) = multipleReturns()`
