@@ -5,3 +5,10 @@
 - Multiple return values
 	-	Function signature: `function multipleReturns() returns(uint a, uint b, uint c)`
 	-	Accessing: `(x, y, z) = multipleReturns()` or `( , , z) = multipleReturns()`
+- Time
+	- Modifiers available `seconds`, `minutes`, `hours`, `days`, `weeks`, `years`
+	- All measured in seconds. Not for calendar calculations.
+- Currency modifiers
+	- `wei`, `szabo`, `finney`, `ether`
+		- Measured relative to 1 wei.
+		- `wei` : 1, `szabo`: 10<sup>12</sup>, `finney`: 10<sup>15</sup>, `ether`: 10<sup>18</sup>
